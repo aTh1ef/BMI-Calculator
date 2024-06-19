@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.4/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=0.7">
+    
+
+</head>
+<body>
+    <!-- BMI Calculator Container -->
+    <div class="container">
+        <h1>BMI Calculator</h1>
+
+        <p>Height (cm)</p>
+        <input type="number" id="height">
+
+        <p>Weight (kg)</p>
+        <input type="number" id="weight">
+
+        <button id="btn">Calculate</button>
+        <button id="viewChartsBtn">View Charts</button>
+
+        <div id="result"></div>
+
+        <!-- New Button for Health Care Centers -->
+        <button id="healthCentersBtn">Health Care Centers</button>
+    </div>
+
+    <!-- Source text -->
+    <div class="source">
+        Source: Certified Nurse Sarah
+        <a href="https://youtu.be/t9e46CV_pyM?si=e1mV8jDX3aK5tW_8" target="_blank">
+            <img src="./assets/nurse sarah.jpg" alt="Certified Nurse Sarah">
+        </a>
+    </div>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./assets/info.jpg" alt="Info Chart"></div>
+                    <div class="swiper-slide"><img src="./assets/chart.webp" alt="BMI Chart"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.4/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

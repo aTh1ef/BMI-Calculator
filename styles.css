@@ -1,0 +1,150 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-top: 50px;
+    width: 300px;
+    box-shadow: 0px 0px 20px 10px #0044ff;
+    padding: 50px;
+    border-radius: 30px;
+    text-align: center;
+    position: relative;
+}
+
+h1 {
+    margin-bottom: 40px;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid #0044ff;
+    width: 50%;
+    margin-bottom: 20px;
+    outline: none;
+    padding: 10px;
+    text-align: center;
+    font-size: 25px;
+}
+
+button {
+    width: 100%;
+    height: 35px;
+    margin-top: 15px;
+    border-radius: 3px;
+    border: none;
+    background-color: #0044ff;
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+
+
+#result {
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: auto;
+}
+
+.source {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.source img {
+    width: 20px;
+    margin-left: 5px;
+}
+
+#healthCentersBtn {
+    position: relative; /* Adjusted to be relative */
+    margin-top: 0.5px; /* Adjusted to provide space between buttons */
+    width: 100%;
+    height: 35px;
+    border-radius: 3px;
+    border: none;
+    background-color: #ff6600;
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 600px) {
+    .container {
+        width: 80vw; /* Use viewport width units for mobile views */
+        max-width: 400px; /* Set a maximum width to prevent excessive scaling */
+    }
+
+    input {
+        font-size: 20px; /* Adjusted font size for smaller screens */
+    }
+
+    button {
+        font-size: 18px; /* Adjusted font size for smaller screens */
+    }
+}
