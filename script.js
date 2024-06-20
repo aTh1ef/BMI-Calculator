@@ -71,5 +71,5 @@ function closeModal() {
 }
 
 function redirectToMapPage() {
-    window.location.href = 'map.html';
+    window.location.href = 'https://ath1ef.github.io/Mangalore-Map/';
 }
